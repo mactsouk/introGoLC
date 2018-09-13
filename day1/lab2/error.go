@@ -22,6 +22,7 @@ func main() {
         fmt.Println(err)
     }
 
+    err = returnError(1, 1)
     if err.Error() == "Error in returnError() function!" {
         fmt.Println("!!")
     }
