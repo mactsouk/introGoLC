@@ -37,6 +37,19 @@ func main() {
         i++
     }
     fmt.Println()
+    fmt.Println("Like while:")
+
+    ok := true
+    i = 0
+    for ok {
+        if i > 10 {
+            ok = false
+        }
+
+        fmt.Print(i, " ")
+        i++
+    }
+    fmt.Println()
 
     anArray := [5]int{0, 1, -1, 2, -2}
     for i, v := range anArray {
