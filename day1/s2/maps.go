@@ -35,6 +35,13 @@ func main() {
 		count++
 	}
 	fmt.Printf("The aMap has now %d elements\n", count)
+
+	count = 0
+	for _ = range aMap {
+		count++
+	}
+	fmt.Printf("The aMap has now %d elements\n", count)
+
 	anotherMap := map[string]int{
 		"One":   1,
 		"Two":   2,
