@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+    // myArray := []int{1, 2, 4, -4}
     myArray := [4]int{1, 2, 4, -4}
     length := len(myArray)
     for i := 0; i < length; i++ {
