@@ -9,5 +9,6 @@ func main() {
 
     fmt.Println(x)
     fmt.Printf("Type of c: %T\n", c)
+    fmt.Printf("Type of x: %T\n", x)
     fmt.Println("m, n:", m, n)
 }
