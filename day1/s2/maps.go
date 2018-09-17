@@ -15,7 +15,8 @@ func main() {
 	aMap["Sun"] = 6
 	fmt.Printf("Sunday is the %dth day of the week.\n", aMap["Sun"])
 
-	_, ok := aMap["Tuesday"]
+        ok := true
+ 	_, ok = aMap["Tuesday"]
 	if ok {
 		fmt.Printf("The Tuesday key exists!\n")
 	} else {
