@@ -18,9 +18,26 @@ func main() {
     TOTAL := 0
 
    if len(os.Args) > 3 {
-        MIN, _ = strconv.Atoi(os.Args[1])
-        MAX, _ = strconv.Atoi(os.Args[2])
-        TOTAL, _ = strconv.Atoi(os.Args[3])
+        temp, err := strconv.Atoi(os.Args[1])
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(-1)
+	}
+	MIN = temp
+
+        temp, err = strconv.Atoi(os.Args[2])
+        if err != nil {
+                fmt.Println(err)
+                os.Exit(-1)
+        }
+        MAX = temp
+
+        temp, err = strconv.Atoi(os.Args[3])
+        if err != nil {
+                fmt.Println(err)
+                os.Exit(-1)
+        }
+	TOTAL = temp
     } else {
         fmt.Println("Usage:", os.Args[0], "MIX MAX TOTAL")
         os.Exit(-1)
