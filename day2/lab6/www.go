@@ -21,6 +21,11 @@ func timeHandler(w http.ResponseWriter, r *http.Request) {
     fmt.Printf("Served time for: %s\n", r.Host)
 }
 
+func testHandler(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, "Serving: %s + /test \n", r.URL.Path)
+    fmt.Printf("Served /test for: %s\n", r.Host)
+}
+
 func main() {
     PORT := ":8001"
     arguments := os.Args
@@ -30,6 +35,7 @@ func main() {
     fmt.Println("Using port number: ", PORT)
 
     http.HandleFunc("/time", timeHandler)
+    http.HandleFunc("/test", testHandler)
     http.HandleFunc("/", myHandler)
 
     err := http.ListenAndServe(PORT, nil)

@@ -14,6 +14,7 @@ func main() {
         fmt.Println("Please provide a host:port string")
         return
     }
+
     CONNECT := arguments[1]
     s, err := net.ResolveUDPAddr("udp4", CONNECT)
     c, err := net.DialUDP("udp4", nil, s)

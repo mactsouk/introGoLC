@@ -15,7 +15,6 @@ func main() {
     }
 
     URL := os.Args[1]
-
     data, err := http.Get(URL)
 
     if err != nil {

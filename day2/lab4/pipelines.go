@@ -9,7 +9,6 @@ import (
 )
 
 var CLOSEA = false
-
 var DATA = make(map[int]bool)
 
 func random(min, max int) int {
