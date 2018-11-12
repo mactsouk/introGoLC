@@ -39,7 +39,7 @@ func main() {
         }
 	TOTAL = temp
     } else {
-        fmt.Println("Usage:", os.Args[0], "MIX MAX TOTAL")
+        fmt.Println("Usage:", os.Args[0], "MIN MAX TOTAL")
         os.Exit(-1)
     }
 

@@ -30,7 +30,7 @@ func main() {
 
     printSlice(s)
 
-    anotherSlice := make([]int, 4)
-    fmt.Printf("A slice with 4 elements: ")
+    anotherSlice := make([]int, 14)
+    fmt.Printf("A slice with 14 elements: ")
     printSlice(anotherSlice)
 }

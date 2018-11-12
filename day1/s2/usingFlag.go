@@ -14,7 +14,7 @@ func main() {
 
 	fmt.Println("-o:", *minusO)
 	fmt.Println("-c:", *minusC)
-	fmt.Println("-K:", *minusK)
+	fmt.Println("-k:", *minusK)
 
 	for index, val := range flag.Args() {
 		fmt.Println(index, ":", val)

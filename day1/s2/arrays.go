@@ -17,6 +17,7 @@ func main() {
     for _, number := range otherArray {
         fmt.Printf("%d ", number)
     }
+	fmt.Println()
     fmt.Printf("\n")
 
     twoD := [3][3]int{

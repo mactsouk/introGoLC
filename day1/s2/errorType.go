@@ -16,7 +16,8 @@ func division(x, y int) (int, error) {
 func main() {
     result, err := division(2, 2)
     if err != nil {
-        log.Fatal(err)
+        fmt.Println(err)
+		return
     }
     fmt.Println("The result is", result)
 

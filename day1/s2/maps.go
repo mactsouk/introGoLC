@@ -15,13 +15,14 @@ func main() {
 	aMap["Sun"] = 6
 	fmt.Printf("Sunday is the %dth day of the week.\n", aMap["Sun"])
 
-        ok := true
+    ok := true
  	_, ok = aMap["Tuesday"]
 	if ok {
 		fmt.Printf("The Tuesday key exists!\n")
 	} else {
 		fmt.Printf("The Tuesday key does not exist!\n")
 	}
+
 	count := 0
 	for key, _ := range aMap {
 		count++

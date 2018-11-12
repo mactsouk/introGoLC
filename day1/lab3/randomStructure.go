@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 type XYZ struct {
@@ -16,15 +17,15 @@ func random(min, max int) int {
 }
 
 func main() {
-
 	data := []XYZ{}
-	var i int64
-	for i = 0; i < 100; i++ {
-		rand.Seed(i)
+	for i := 0; i < 100; i++ {
+		seed := time.Now().UnixNano()
+		rand.Seed(seed)
 		first := random(0, 100)
 		second := random(0, 100)
-		temp := XYZ{i, first, second}
+		temp := XYZ{seed, first, second}
 		data = append(data, temp)
 	}
 	fmt.Println(data)
 }
+

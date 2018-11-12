@@ -5,7 +5,7 @@ import (
 )
 
 func A() {
-	fmt.Println("This is function A!")
+	fmt.Println("This is function A! - CHANGED")
 }
 
 func B() {

@@ -4,12 +4,14 @@ import (
     "fmt"
 )
 
+// 2 1 0
 func a1() {
     for i := 0; i < 3; i++ {
         defer fmt.Print(i, " ")
     }
 }
 
+// 3 3 3
 func a2() {
     for i := 0; i < 3; i++ {
         defer func() {
@@ -18,6 +20,7 @@ func a2() {
     }
 }
 
+// 2 1 0
 func a3() {
     for i := 0; i < 3; i++ {
         defer func(n int) {
