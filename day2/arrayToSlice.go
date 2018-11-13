@@ -13,4 +13,7 @@ func main() {
 
 	t := append(s, ref...)
 	fmt.Println(t)
+	
+	s := append(s, ref...)
+	fmt.Println(s)
 }
