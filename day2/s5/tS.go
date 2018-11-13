@@ -17,7 +17,7 @@ func main() {
     }
 
     PORT := ":" + arguments[1]
-    l, err := net.Listen("tcp", PORT)
+    l, err := net.Listen("tcp4", PORT)
     if err != nil {
         fmt.Println(err)
         return

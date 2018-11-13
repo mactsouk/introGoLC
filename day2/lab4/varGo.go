@@ -18,7 +18,7 @@ func main() {
         }(i)
     }
 
-    time.Sleep(30000)
+    time.Sleep(time.Second)
     fmt.Println("\nExiting...")
 }
 

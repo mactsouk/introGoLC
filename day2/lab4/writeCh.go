@@ -15,6 +15,7 @@ func main() {
     c := make(chan int)
     go wCh(c, 10)
     time.Sleep(2 * time.Second)
-    fmt.Println("Read: ", <-c)
+	fmt.Println("*", <-c)
+    fmt.Println("Read:", <-c)
 }
 
